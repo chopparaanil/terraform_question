@@ -1,0 +1,70 @@
+1. What is Terraform?
+Terraform is an Infrastructure as Code (IaC) tool used to provision and manage infrastructure using declarative configuration files.
+
+2. Why do we use Terraform?
+Terraform allows us to create infrastructure consistently, repeatedly, and automatically instead of manually creating resources through the cloud console.
+
+3. What is Infrastructure as Code?
+Infrastructure as Code means defining and managing infrastructure using code instead of manually configuring it.
+
+5. What is a Terraform provider?
+A provider is a plugin that allows Terraform to communicate with an external platform such as AWS.
+
+6. What is terraform init?
+terraform init initializes the Terraform working directory and downloads the required providers and dependencies.
+
+7. What is .terraform.lock.hcl?
+It records the selected provider versions and checksums so Terraform can use consistent provider dependencies.
+
+8. What is a Terraform resource?
+A resource represents infrastructure that Terraform creates and manages.
+
+10. What is an implicit dependency?
+An implicit dependency occurs when one Terraform resource references another resource.
+
+11. What is a Terraform data source?
+A data source allows Terraform to read or retrieve information from an existing resource or external source without creating that resource.
+
+13. What is Terraform State?
+Terraform state is the record Terraform uses to track the infrastructure it manages and map Terraform configuration to real-world resources.
+
+14. Why is Terraform state important?
+Terraform uses state to understand what resources already exist and determine what changes are required.
+
+15. What does terraform state list do
+It displays the resources currently tracked in the Terraform state.
+
+16. What does terraform fmt do?
+It formats Terraform configuration files into standard Terraform formatting.
+
+17. What does terraform validate do?
+It checks whether the Terraform configuration is syntactically and structurally valid.
+
+18. What does terraform plan do?
+It compares the desired configuration with the current infrastructure/state and shows what Terraform would change without actually making those changes.
+
+19. What does terraform apply do?
+It applies the changes proposed by Terraform and creates, modifies, or destroys infrastructure.
+
+20. What does terraform destroy do?
+It destroys the infrastructure managed by the current Terraform configuration/state.
+
+26. Why do we use variables?
+Variables make Terraform configurations reusable and help avoid hard-coded values.
+
+27. What is variables.tf?
+variables.tf is commonly used to define Terraform input variables.
+variable "instance_type" {
+  type    = string
+  default = "t3.micro"
+}
+
+28. What is terraform.tfvars?
+terraform.tfvars is commonly used to provide values for Terraform variables.
+
+30. What is Terraform output?
+An output exposes useful values from Terraform resources after deployment.
+
+
+
+
