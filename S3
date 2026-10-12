@@ -1,0 +1,27 @@
+1. What is S3?
+Amazon S3 (Simple Storage Service) is an AWS object storage service used to store and retrieve files such as images, backups, logs, videos, and application artifacts.
+
+Easy memory: Bucket = container; Object = file
+Important S3 terms
+Term
+Simple meaning
+Bucket
+A container for objects
+Object
+A file stored in S3
+Object key
+The object's name/path within a bucket
+Region
+The AWS region where the bucket is created
+Versioning
+Keeps multiple versions of objects
+Bucket policy
+Controls access using resource-based permissions
+
+
+
+What is an S3 bucket?
+An S3 bucket is a container used to store objects. Bucket names must be globally unique within the applicable AWS partition.
+4. What is an S3 object?
+An S3 object is a file and its associated metadata stored in a bucket.
+app.zip, backup.sql, or logs/app.log.
