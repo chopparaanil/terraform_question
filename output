@@ -1,0 +1,55 @@
+10f97e41e6ce:/workspace# cat variables.tf 
+variable "aws_region" {
+  description = "AWS region"
+  type        = string
+  default     = "ap-south-1"
+}
+
+variable "vpc_cidr" {
+  description = "CIDR block for VPC"
+  type        = string
+  default     = "10.0.0.0/16"
+}
+
+variable "public_subnet_cidr" {
+  description = "CIDR block for public subnet"
+  type        = string
+  default     = "10.0.1.0/24"
+}
+
+variable "instance_type" {
+  description = "EC2 instance type"
+  type        = string
+  default     = "t3.micro"
+}
+10f97e41e6ce:/workspace# cat outputs.tf 
+output "vpc_id" {
+  description = "VPC ID"
+  value       = aws_vpc.main.id
+}
+
+output "subnet_id" {
+  description = "Public subnet ID"
+  value       = aws_subnet.public.id
+}
+
+output "security_group_id" {
+  description = "Web security group ID"
+  value       = aws_security_group.web.id
+}
+
+output "instance_id" {
+  description = "EC2 instance ID"
+  value       = aws_instance.web.id
+}
+
+output "instance_private_ip" {
+  description = "EC2 private IP address"
+  value       = aws_instance.web.private_ip
+}
+
+output "instance_public_ip" {
+  description = "EC2 public IP address"
+  value       = aws_instance.web.public_ip
+}
+10f97e41e6ce:/workspace#
