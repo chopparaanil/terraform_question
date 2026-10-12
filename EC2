@@ -1,0 +1,57 @@
+1. What is an EC2 Instance?
+EC2 = Elastic Compute Cloud
+Amazon EC2 provides virtual servers in AWS that you can use to run applications.
+
+2.EC2 AMI
+An AMI is a template used to create an EC2 instance
+AMI is a template containing the operating system and required configuration used to launch EC2 instances.
+
+EC2 Instance Type
+Instance type determines the CPU, memory, networking, and other capabilities of your EC2 instance.
+t3.micro
+t3.small
+t3.medium
+t3.large
+m7i.large
+c7i.large
+R7i.large
+
+6. Key Pair
+A key pair is used to securely connect to an EC2 instance.
+
+7. VPC
+EC2 instances run inside a VPC.
+VPC = Virtual Private Cloud
+Think of it as your private network in AWS.
+
+8. Subnet
+A subnet is a smaller network inside a VPC.
+
+9. Public vs Private EC2
+Public EC2
+An EC2 instance can have public connectivity.
+Private EC2
+No direct inbound access from the internet.
+
+10. Security Group
+Security Group acts as a virtual firewall for EC2.
+
+11. EBS
+EBS = Elastic Block Store
+EBS provides persistent block storage for EC2.
+
+13. Elastic IP
+An Elastic IP is a static public IPv4 address associated with an AWS resource such as an EC2 instance.
+
+14. IAM Role
+Instead of putting AWS access keys inside an EC2 server, we can attach an IAM Role.
+
+15. User Data
+EC2 User Data allows you to execute commands/scripts during instance initialization.
+
+“EC2 is AWS's virtual server service. When launching an EC2 instance, I select an AMI, instance type, VPC/subnet, security group, storage, and authentication method. In production, I would normally use IAM roles, private subnets, an ALB, Auto Scaling Groups, CloudWatch monitoring, and multiple Availability Zones for security, scalability, and high availability.”
+
+
+
+
+
