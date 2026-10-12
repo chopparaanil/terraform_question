@@ -65,6 +65,21 @@ terraform.tfvars is commonly used to provide values for Terraform variables.
 30. What is Terraform output?
 An output exposes useful values from Terraform resources after deployment.
 
+10f97e41e6ce:/workspace# ls -la
+total 48
+drwxr-sr-x    5 212209   400            225 Oct 12 05:35 .
+drwxr-xr-x    1 root     root            29 Oct  8 08:51 ..
+drwxr-sr-x    3 root     400             23 Oct  8 09:08 .terraform
+-rw-r--r--    1 root     400           1481 Oct  8 09:08 .terraform.lock.hcl
+drwxr-sr-x    3 root     400             23 Oct  9 10:22 aws-devops-project
+-rw-r--r--    1 root     400           3285 Oct  8 12:27 main.tf
+-rw-r--r--    1 root     400            618 Oct  8 11:43 outputs.tf
+drwxr-sr-x    3 root     400            202 Oct  9 06:37 s3-lab
+-rw-r--r--    1 root     400            182 Oct 12 05:35 terraform.tfstate
+-rw-r--r--    1 root     400          24480 Oct 12 05:35 terraform.tfstate.backup
+-rw-r--r--    1 root     400            136 Oct  8 12:26 terraform.tfvars
+-rw-r--r--    1 root     400            473 Oct  8 12:26 variables.tf
+10f97e41e6ce:/workspace# 
 
 
 
