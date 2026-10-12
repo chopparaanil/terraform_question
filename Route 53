@@ -1,0 +1,6 @@
+1. What is Route 53?
+Route 53 is AWS's managed DNS service used for domain registration, DNS resolution, health checks, and routing traffic to applications and AWS resources.
+
+4. What is DNS?
+DNS = Domain Name System
+DNS translates human-readable domain names into IP addresses or other DNS destinations.
